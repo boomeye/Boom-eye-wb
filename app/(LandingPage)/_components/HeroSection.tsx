@@ -10,35 +10,35 @@ const heroData = [
     title: "#1 Eye Clinic in Abuja.",
     subtitle: "With Unparalleled Eye Care",
     content: "Experience world-class eye examinations, personalized care and advanced optical solutions for the your family.",
-    learn_more_button_url: "/learn-more",
+    learn_more_button_url: "/about-us",
   },
   {
     hero_image_url: "/hero-image-2.png",
     title: "Contact Lenses That Fit Your Life.",
     subtitle: "Comfort Meets Clarity",
     content: "We custom-fit soft, rigid, and specialty lenses using the latest technology for optimal vision and long-term eye health.",
-    learn_more_button_url: "/#",
+    learn_more_button_url: "/about-us",
   },
   {
     hero_image_url: "/hero-image-3.png",
     title: "Protect Your Eyes in the Digital World.",
     subtitle: "Blue Light Shield-Lenses",
     content: "Reduce eye strain, improve sleep quality, and work longer with our blue light-filtering lenses designed for prolong screen users.",
-    learn_more_button_url: "/#",
+    learn_more_button_url: "/about-us",
   },
   {
     hero_image_url: "/hero-image-4.png",
     title: "Progressive Lenses Done Right.",
     subtitle: "Seamless Vision at Every Distance.",
     content: "Enjoy clear & comfortable vision at far, intermediate, and near with expertly dispensed lenses that support rapid adaption.",
-    learn_more_button_url: "/#",
+    learn_more_button_url: "/about-us",
   }, 
   {
     hero_image_url: "/hero-image-5.png",
     title: "Empowering Young Vision.",
     subtitle: "Kid’s Eyecare & Vision Training.",
     content: "From school screening to functional vision therapy, we support children’s visual development and learning outcome every step of the way.",
-    learn_more_button_url: "/#",
+    learn_more_button_url: "/about-us",
   },
 
   {
@@ -46,7 +46,7 @@ const heroData = [
     title: "Stop the Progress!",
     subtitle: "Myopia Management That Works.",
     content: "We use evidence-based methods and myopia control lenses to slow your child’s worsening eyesight.",
-    learn_more_button_url: "/#",
+    learn_more_button_url: "/about-us",
   },
 ];
 
@@ -63,7 +63,7 @@ const HeroSection = () => {
   }, [currentHeroIndex]);
 
   return (
-    <div className="relative min-h-screen flex flex-col">
+    <div className="relative min-h-screen flex flex-col bg-[#F3FAFD]">
       {/* Main Hero Section */}
       <div 
         className="flex-1 relative bg-cover bg-center bg-no-repeat transition-opacity duration-200 ease-out"
@@ -93,7 +93,7 @@ const HeroSection = () => {
       </div>
 
       {/* Contact Information Footer */}
-      <div className="bg-white text-white relative z-20 flex justify-center">
+      <div className="text-white relative z-20 flex justify-center">
         <div className="bg-[#0B354D] rounded-[8px] mt-10 md:-mt-14 xl:-mt-16 mx-auto px-4 py-6 xl:px-6 xl:py-8 w-[95%] sm:w-[90%] xl:w-auto">
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-6 xl:gap-y-0 gap-x-8 divide-y divide-white/20 xl:divide-y-0 xl:divide-x xl:divide-white">
             
