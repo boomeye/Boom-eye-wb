@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "./_components/Header";
 import Navbar from "./_components/Navbar";
 import HeroSection from "./_components/HeroSection";
+import Footer from "./_components/Footer";
 
 const archivo = localFont({
   src: "../fonts/Archivo-VariableFont_wdth,wght.ttf",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

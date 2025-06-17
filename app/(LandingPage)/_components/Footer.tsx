@@ -50,27 +50,27 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <Link href="#" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
+                <Link href="/" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
+                <Link href="/about-us" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
+                <Link href="/services" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
                   Ophthalmic Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
+                <Link href="/book-appointment" className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#87CEEB]">
                   Book An Appointment
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#F4931C] hover:text-orange-400 font-inter font-semibold text-base py-2 block border-b border-white/30">
+                <Link href="/shop" className="text-[#F4931C] hover:text-orange-400 font-inter font-semibold text-base py-2 block border-b border-white/30">
                   SHOP NOW!
                 </Link>
               </li>

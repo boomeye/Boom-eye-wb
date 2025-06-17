@@ -51,10 +51,10 @@ const Navbar = () => {
             </button>
             {isServicesOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-[#0A0A23] rounded-md shadow-lg py-1 z-20">
-                <Link href="/services/general-eyecare-test" className={mobileDropdownLinkClasses('/services/general-eyecare-test')}>GENERAL EYECARE & TEST</Link>
-                <Link href="/services/vision-correction" className={`${mobileDropdownLinkClasses('/services/vision-correction')} border-t border-white`}>VISION CORRECTION</Link>
-                <Link href="/services/myopia-control" className={`${mobileDropdownLinkClasses('/services/myopia-control')} border-t border-white`}>MYOPIA CONTROL</Link>
-                <Link href="/services/home-services" className={`${mobileDropdownLinkClasses('/services/home-services')} border-t border-white`}>HOME SERVICES</Link>
+                <Link href="/services" className={mobileDropdownLinkClasses('/services')}>GENERAL EYECARE & TEST</Link>
+                <Link href="/services" className={`${mobileDropdownLinkClasses('/services')} border-t border-white`}>VISION CORRECTION</Link>
+                <Link href="/services" className={`${mobileDropdownLinkClasses('/services')} border-t border-white`}>MYOPIA CONTROL</Link>
+                <Link href="/services" className={`${mobileDropdownLinkClasses('/services')} border-t border-white`}>HOME SERVICES</Link>
               </div>
             )}
           </div>
@@ -133,10 +133,12 @@ const Navbar = () => {
                 </button>
                 {isServicesOpen && (
                   <div className="w-full bg-[#0A0A23] py-1">
-                    <Link href="/services/general-eyecare-test" className={mobileDropdownLinkClasses('/services/general-eyecare-test')} onClick={() => setIsMobileMenuOpen(false)}>GENERAL EYECARE & TEST</Link>
-                    <Link href="/services/vision-correction" className={`${mobileDropdownLinkClasses('/services/vision-correction')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>VISION CORRECTION</Link>
-                    <Link href="/services/myopia-control" className={`${mobileDropdownLinkClasses('/services/myopia-control')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>MYOPIA CONTROL</Link>
-                    <Link href="/services/home-services" className={`${mobileDropdownLinkClasses('/services/home-services')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>HOME SERVICES</Link>
+                    <Link href="/services" className={mobileDropdownLinkClasses('/services')} onClick={() => setIsMobileMenuOpen(false)}>GENERAL EYECARE & TEST</Link>
+                    <Link href="/services" className={`${mobileDropdownLinkClasses('/services')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>VISION CORRECTION</Link>
+                    <Link href="/services/" className={mobileDropdownLinkClasses('/services/')} onClick={() => setIsMobileMenuOpen(false)}>GENERAL EYECARE & TEST</Link>
+                    <Link href="/services/" className={`${mobileDropdownLinkClasses('/services/')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>VISION CORRECTION</Link>
+                    <Link href="/services/" className={`${mobileDropdownLinkClasses('/services/')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>MYOPIA CONTROL</Link>
+                    <Link href="/services/" className={`${mobileDropdownLinkClasses('/services/')} border-t border-white`} onClick={() => setIsMobileMenuOpen(false)}>HOME SERVICES</Link>
                   </div>
                 )}
               </div>

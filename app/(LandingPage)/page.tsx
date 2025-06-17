@@ -12,7 +12,6 @@ export default function Home() {
       <WhyChooseUs/>
       <Testimonials/>
       <TeamSection/>
-      <Footer/>
     </div>
   );
 }
