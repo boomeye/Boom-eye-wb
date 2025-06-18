@@ -99,11 +99,11 @@ export const ContactUsHeroSection = () => {
               <div key={i} className="flex flex-col items-center text-center py-6 px-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6092A7] mb-4">
                   <Icon icon={icon} className="w-6 h-6 text-white" />
-                </div>
+          </div>
                 <h3 className="font-archivo font-bold text-[16px] leading-[150%] text-[#454545] mb-2 xl:mb-4">
                   {title}
-                </h3>
-                <div className="space-y-1">
+              </h3>
+              <div className="space-y-1">
                   {content.map((item, j) => {
                     if ('link' in item) {
                       return (
@@ -130,13 +130,13 @@ export const ContactUsHeroSection = () => {
                         <p
                           key={j}
                           className="block text-[13.5px] text-[#454545] font-archivo"
-                        >
+                >
                           {item.text}
                         </p>
                       );
                     }
                   })}
-                </div>
+            </div>
               </div>
             ))}
           </div>

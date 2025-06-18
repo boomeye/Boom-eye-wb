@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         {/* Use grid */}
-        <div className="flex-grow grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 w-full lg:w-2/3 xl:w-2/4 md:text-left text-left">
+        <div className="flex-grow grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-8 w-full xl:w-2/4 md:text-left text-left">
           <div className="px-4">
             <h2 className="font-archivo font-bold text-[32px] text-[#87CEEB] leading-[150%] tracking-[0%] mb-3 relative after:absolute after:bottom-0 after:left-0 after:w-[129px] after:h-[1.5px] after:bg-[#F4931C]">
               Quick Links
