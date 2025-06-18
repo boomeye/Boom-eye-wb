@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { usePathname } from 'next/navigation';
@@ -10,6 +10,10 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isShopNowOpen, setIsShopNowOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile navbar toggle
+  
+  // Refs for timeout management
+  const servicesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const shopTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const linkClasses = (href: string) =>
     `hover:text-[#69A6C9] font-archivo text-base leading-[150%] tracking-[0%] text-center align-middle ${
@@ -25,6 +29,36 @@ const Navbar = () => {
     `block px-4 py-2 text-base font-archivo hover:bg-white/10 ${
       pathname === href ? 'text-[#69A6C9] font-semibold' : 'text-white font-medium'
     }`;
+
+  // Handle services dropdown with delay
+  const handleServicesMouseEnter = () => {
+    if (servicesTimeoutRef.current) {
+      clearTimeout(servicesTimeoutRef.current);
+      servicesTimeoutRef.current = null;
+    }
+    setIsServicesOpen(true);
+  };
+
+  const handleServicesMouseLeave = () => {
+    servicesTimeoutRef.current = setTimeout(() => {
+      setIsServicesOpen(false);
+    }, 500);
+  };
+
+  // Handle shop dropdown with delay
+  const handleShopMouseEnter = () => {
+    if (shopTimeoutRef.current) {
+      clearTimeout(shopTimeoutRef.current);
+      shopTimeoutRef.current = null;
+    }
+    setIsShopNowOpen(true);
+  };
+
+  const handleShopMouseLeave = () => {
+    shopTimeoutRef.current = setTimeout(() => {
+      setIsShopNowOpen(false);
+    }, 500);
+  };
 
   return (
     <nav className="bg-white text-gray-800 sticky top-0 z-50 shadow-sm h-[44px]">
@@ -43,8 +77,8 @@ const Navbar = () => {
           {/* Services Dropdown */}
           <div
             className="relative group"
-            onMouseEnter={() => setIsServicesOpen(true)}
-            onMouseLeave={() => setIsServicesOpen(false)}
+            onMouseEnter={handleServicesMouseEnter}
+            onMouseLeave={handleServicesMouseLeave}
           >
             <button className={`flex items-center ${linkClasses('/services')}`} >
               SERVICES <Icon icon="mdi:chevron-down" className="ml-1 w-4 h-4" />
@@ -66,8 +100,8 @@ const Navbar = () => {
           {/* Shop Now Dropdown */}
           <div
             className="relative group"
-            onMouseEnter={() => setIsShopNowOpen(true)}
-            onMouseLeave={() => setIsShopNowOpen(false)}
+            onMouseEnter={handleShopMouseEnter}
+            onMouseLeave={handleShopMouseLeave}
           >
             <button className={`flex items-center font-archivo text-[#F4931C] text-base leading-[150%] tracking-[0%] text-center align-middle ${
                 pathname.startsWith('/shop') ? 'font-semibold' : 'font-medium'
