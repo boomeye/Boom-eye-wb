@@ -80,10 +80,10 @@ const ListOfServices = () => {
           {services.map((service, idx) => (
             <div
               key={service.title}
-              className="bg-white rounded-[10px] border border-gray-100 p-5 flex flex-col h-full max-w-[286px] min-h-[400px] max-h-[500px] relative shadow-[0px_4px_2px_0px_#00000014]"
+              className="group bg-white rounded-[10px] border border-gray-100 p-5 flex flex-col h-full max-w-[286px] min-h-[400px] max-h-[500px] relative shadow-[0px_4px_2px_0px_#00000014] transition-colors duration-300 group-hover:bg-[#090920] hover:bg-[#090920]"
             >
               {/* Image */}
-              <div className="w-full min-h-[169px] max-h-[169px] rounded-t-xl overflow-hidden flex items-center justify-center bg-white mb-[20px]">
+              <div className="w-full min-h-[169px] max-h-[169px] rounded-t-xl overflow-hidden flex items-center justify-center group bg-white transition-colors duration-300 group-hover:bg-[#090920] hover:bg-[#090920] mb-[20px]">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -93,13 +93,13 @@ const ListOfServices = () => {
               </div>
               {/* Content */}
               <div className="flex flex-col flex-1">
-                <h3 className="font-archivo font-bold text-[20px] leading-[150%] tracking-[-0.02em] align-middle text-[#0A0A23] mb-2">
+                <h3 className="font-archivo font-bold text-[20px] leading-[150%] tracking-[-0.02em] align-middle text-[#0A0A23] mb-2 transition-colors duration-300 group-hover:text-white">
                   {service.title}
                 </h3>
-                <p className="font-archivo font-normal text-[14px] leading-[150%] tracking-[0%] align-middle text-[#454545] mb-[10px] flex-1">
+                <p className="font-archivo font-normal text-[14px] leading-[150%] tracking-[0%] align-middle text-[#454545] mb-[10px] flex-1 transition-colors duration-300 group-hover:text-white">
                   {service.description}
                 </p>
-                <button className="w-full bg-[#090920] hover:bg-[#1a2538] text-white font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle rounded-lg py-2.5 px-4 mt-auto transition-colors duration-200">
+                <button className="w-full bg-[#090920] hover:bg-[#1a2538] text-white font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle rounded-lg py-2.5 px-4 mt-auto transition-colors duration-200 group-hover:bg-white group-hover:text-[#090920]">
                   Book An Appointment
                 </button>
               </div>

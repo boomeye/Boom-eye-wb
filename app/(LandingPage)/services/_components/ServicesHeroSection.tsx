@@ -51,7 +51,7 @@ export const ServicesHeroSection = () => {
       {/* Contact Information Footer (All screens) */}
       <div className="text-white static md:relative z-20 flex justify-center px-4 sm:px-6 lg:px-8">
         <div className="bg-white text-black rounded-[16px] mt-10 md:-mt-14 lg:-mt-8 xl:-mt-24 mx-auto px-4 py-6 sm:py-8 lg:py-10 w-full max-w-[1240px] shadow[0px 3px 15px 0px #0000001A]">
-          <h2 className="font-archivo font-bold text-3xl md:text-4xl leading-[120%] tracking-[0%] text-center text-[#4A7181] mb-[16px]">
+          <h2 className="font-archivo font-bold text-3xl md:text-4xl leading-[120%] tracking-[0%] text-center text-[#F4931C] mb-[16px]">
           Advanced eye care solutions tailored to your unique needs
           </h2>
           
