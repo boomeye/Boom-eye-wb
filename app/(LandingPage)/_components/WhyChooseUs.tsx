@@ -1,5 +1,8 @@
-import React from 'react';
+"use client"
+
+import React, { useRef } from 'react';
 import Image from 'next/image';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const whyChooseUsData = [
   {
@@ -29,6 +32,17 @@ const whyChooseUsData = [
 ];
 
 const WhyChooseUs = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollByCard = (dir: 'left' | 'right') => {
+    const container = scrollRef.current;
+    if (!container) return;
+    const card = container.querySelector('.why-card');
+    if (!card) return;
+    const cardWidth = (card as HTMLElement).offsetWidth + 16; // 16px gap
+    container.scrollBy({ left: dir === 'left' ? -cardWidth : cardWidth, behavior: 'smooth' });
+  };
+
   return (
     <section className="py-[67px] bg-[#F3FAFD] overflow-hidden">
       <div className="max-w-[100rem] mx-auto px-4">
@@ -52,22 +66,64 @@ const WhyChooseUs = () => {
                 className="rounded-xl"
               />
             </div>
-            
           </div>
 
           {/* Right Column: Numbered Points */}
-          <div className="flex-1 space-y-6 lg:space-y-[8px] w-full">
-            {whyChooseUsData.map((item, index) => (
-              <div key={index} className="flex items-center bg-white rounded-[100px] p-4 shadow-[0px_2px_14px_0px_#E7E7E9] w-full min-h-[100px] pt-1 pr-2 pb-1 gap-4 relative mx-auto xl:w-[599px]">
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[92px] h-[92px] flex items-center justify-center text-[#294019] rounded-[100px] font-archivo font-bold text-2xl leading-[120%] tracking-[-0.02em] p-2.5 bg-gradient-to-br from-white to-[#C8E8F6]">
-                  {`0${index + 1}`}
-                </div>
-                <div className="ml-[104px] pr-4">
-                  <h3 className="font-archivo font-bold text-base leading-[150%] text-[#454545] mb-1">{item.title}</h3>
-                  <p className="font-archivo font-normal text-base leading-[150%] text-[#454545]">{item.description}</p>
-                </div>
+          <div className="w-full md:flex-1 md:space-y-6 md:w-full">
+            {/* Mobile: horizontal scroll with chevrons; md+: previous layout */}
+            <div className="relative block md:hidden">
+              {/* Chevrons */}
+              <button
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-br from-white to-[#C8E8F6] p-2 border rounded-full flex items-center justify-center"
+                style={{ display: 'block' }}
+                onClick={() => scrollByCard('left')}
+                aria-label="Scroll left"
+              >
+                <ChevronLeft className="w-6 h-6 text-[#294019]" />
+              </button>
+              <button
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-br from-white to-[#C8E8F6] p-2 border rounded-full shadow flex items-center justify-center"
+                style={{ display: 'block' }}
+                onClick={() => scrollByCard('right')}
+                aria-label="Scroll right"
+              >
+                <ChevronRight className="w-6 h-6 text-[#294019]" />
+              </button>
+              <div
+                ref={scrollRef}
+                className="flex flex-row gap-4 overflow-x-auto scrollbar-hide px-8"
+                style={{ scrollBehavior: 'smooth' }}
+              >
+                {whyChooseUsData.map((item, index) => (
+                  <div
+                    key={index}
+                    className="why-card flex flex-row items-start bg-white rounded-[8px] border border-[#C8E8F6] shadow-none px-2 py-3 min-h-[104px] mb-3 min-w-[320px] max-w-[340px]"
+                  >
+                    <div className="flex-shrink-0 font-bold text-[#294019] bg-transparent text-base mr-4">
+                      {`0${index + 1}`}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-[#454545] text-base">{item.title}</h3>
+                      <p className="font-normal text-[#6B7A7A] text-sm mt-1">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            {/* Desktop: previous layout */}
+            <div className="hidden md:flex flex-col space-y-6 w-full">
+              {whyChooseUsData.map((item, index) => (
+                <div key={index} className="flex items-center bg-white rounded-[100px] p-4 shadow-[0px_2px_14px_0px_#E7E7E9] w-full min-h-[100px] pt-1 pr-2 pb-1 gap-4 relative mx-auto xl:w-[599px]">
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[92px] h-[92px] flex items-center justify-center text-[#294019] rounded-[100px] font-archivo font-bold text-2xl leading-[120%] tracking-[-0.02em] p-2.5 bg-gradient-to-br from-white to-[#C8E8F6]">
+                    {`0${index + 1}`}
+                  </div>
+                  <div className="ml-[104px] pr-4">
+                    <h3 className="font-archivo font-bold text-base leading-[150%] text-[#454545] mb-1">{item.title}</h3>
+                    <p className="font-archivo font-normal text-base leading-[150%] text-[#454545]">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

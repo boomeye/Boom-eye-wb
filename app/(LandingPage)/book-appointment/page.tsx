@@ -5,8 +5,9 @@ import AppointmentBookingFlow from './_components/AppointmentBookingFlow'
 
 const BookAppointmentPage = () => {
   return (
-    <div>
+    <div className='bg-[#F3FAFD]'>
       <BookAppointmentHeroSection/>
+      <br />
       <AppointmentBookingFlow/>
       <BookAppointmentFooter/>
     </div>

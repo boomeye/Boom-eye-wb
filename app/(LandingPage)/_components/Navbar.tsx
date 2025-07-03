@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { Icon } from '@iconify/react';
 import { usePathname } from 'next/navigation';
+import { Menu } from 'lucide-react';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -61,9 +62,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-gray-800 sticky top-0 z-50 shadow-sm h-[44px]">
+    <nav className="sticky top-0 z-50 max-w-[120rem] mx-auto">
       {/* Desktop Navbar */}
-      <div className="hidden xl:flex xl:items-center xl:justify-start xl:space-x-[120px] mx-auto h-full px-5">
+      <div className="hidden xl:flex xl:items-center xl:justify-start xl:space-x-[120px] mx-auto px-5 bg-white text-gray-800 shadow-sm h-[44px]">
         {/* Left Section: RC Number */}
         <div className="flex items-center">
           <p className="font-archivo text-[14px] font-bold leading-[150%] tracking-[0%] align-middle text-[#0B354D]">RC 8096539</p>
@@ -121,12 +122,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navbar Toggle Button */}
-      <div className="xl:hidden flex items-center justify-between h-full px-5">
-        <p className="font-archivo text-[14px] font-bold leading-[150%] tracking-[0%] align-middle text-[#0B354D]">RC 8096539</p>
-        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-800 focus:outline-none">
-          <Icon icon="tabler:align-right" className="w-6 h-6" />
-        </button>
+      {/* Mobile Navbar (Custom Design) */}
+      <div className="xl:hidden flex h-[56px] w-full">
+        {/* Left: Orange Hamburger */}
+        <div className="bg-[#F4931C] w-[87.99870300292969px] flex items-center justify-center">
+          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="focus:outline-none">
+           <Menu className='text-white w-[28px] h-[28px]'/>
+          </button>
+        </div>
+        {/* Right: Book an Appointment */}
+        <Link   href="/book-appointment"  className="flex-1 bg-[#0A0A23] flex items-center justify-end pr-[32px] pl-6">
+          <span className="text-white font-archivo font-bold text-[14px] leading-[150%] tracking-[0%] uppercase">BOOK AN APPOINTMENT</span>
+        </Link>
       </div>
 
       {/* Mobile Menu Overlay */}

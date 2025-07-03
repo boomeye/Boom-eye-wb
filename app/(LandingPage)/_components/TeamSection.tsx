@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useRef } from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 
@@ -43,6 +44,19 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
+  // Ref for mobile scroll container
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Scroll function for mobile
+  const scrollByCard = (dir: 'left' | 'right') => {
+    const container = scrollRef.current;
+    if (!container) return;
+    const card = container.querySelector('.team-card');
+    if (!card) return;
+    const cardWidth = (card as HTMLElement).offsetWidth + 16; // 16px gap
+    container.scrollBy({ left: dir === 'left' ? -cardWidth : cardWidth, behavior: 'smooth' });
+  };
+
   return (
     <section className="text-gray-600 body-font bg-[#F5F8FC] py-16">
       <div className="max-w-[100rem] px-4 mx-auto">
@@ -59,8 +73,64 @@ const TeamSection = () => {
           </p>
         </div>
 
-{/* Team cards */}
-        <div className="flex flex-col xl:flex-row justify-between items-center gap-8 max-w-[1400px] mx-auto px-4">
+        {/* Mobile: horizontal scrollable team cards with chevrons */}
+        <div className="relative block md:hidden mb-8">
+          {/* Chevrons */}
+          <button
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-br from-white to-[#C8E8F6] p-2 border rounded-full flex items-center justify-center"
+            style={{ display: 'block' }}
+            onClick={() => scrollByCard('left')}
+            aria-label="Scroll left"
+          >
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+          <button
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-br from-white to-[#C8E8F6] p-2 border rounded-full flex items-center justify-center"
+            style={{ display: 'block' }}
+            onClick={() => scrollByCard('right')}
+            aria-label="Scroll right"
+          >
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+          <div
+            ref={scrollRef}
+            className="flex flex-row gap-4 overflow-x-auto scrollbar-hide px-8"
+            style={{ scrollBehavior: 'smooth' }}
+          >
+            {teamMembers.map((member, index) => (
+              <div key={index} className="team-card flex flex-col items-center min-w-[325px] h-auto max-w-[335px] mb-4">
+                <div className="w-full h-[300px] min-w-[325px] mb-2 relative">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    layout="fill"
+                    objectFit=""
+                  />
+                </div>
+                <div className="w-full flex justify-center flex-col items-center">
+                  <h2 className="font-archivo font-bold text-[18px] text-[#0A0A23] leading-[150%] text-center">
+                    {member.name}
+                  </h2>
+                  <h3 className="font-archivo font-normal text-base text-[#4A7181] leading-[150%] text-center">
+                    {member.title}
+                  </h3>
+                  {member.bioLink && (
+                    <a
+                      href={member.bioLink}
+                      className="text-[#346095] hover:text-[#2A4C7A] inline-flex items-center font-archivo font-semibold text-sm"
+                    >
+                      Biography
+                      <Icon icon="ic:baseline-arrow-outward" className="w-4 h-4 ml-1" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop: previous grid layout */}
+        <div className="hidden md:flex flex-col xl:flex-row justify-between items-center gap-8 max-w-[1400px] mx-auto px-4">
           <div className="p-4 w-full xl:w-auto">
             <div className="h-full flex flex-col justify-between items-center text-center">
               <div className="w-full sm:w-[365px] h-[420px] md:h-[460px] sm:h-[420px] xl:h-[520px] mb-2 relative">
@@ -72,7 +142,7 @@ const TeamSection = () => {
                 />
               </div>
               <div className="w-full">
-                <h2 className="font-archivo font-bold text-xl text-[#0A0A23] leading-[150%] text-center">
+                <h2 className="font-archivo font-bold text-[18px] text-[#0A0A23] leading-[150%] text-center">
                   {teamMembers[0].name}
                 </h2>
 
@@ -107,7 +177,7 @@ const TeamSection = () => {
                       />
                     </div>
                     <div className="w-full">
-                      <h2 className="font-archivo font-bold text-xl text-[#0A0A23] leading-[150%] text-center">
+                      <h2 className="font-archivo font-bold text-[18px] text-[#0A0A23] leading-[150%] text-center">
                         {member.name}
                       </h2>
 

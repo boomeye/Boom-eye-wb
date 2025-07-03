@@ -2,7 +2,7 @@ import React from "react";
 
 const BiographySection = () => {
   return (
-    <div className="w-full bg-white py-12 px-4 sm:px-8 lg:px-16 flex flex-col items-center">
+    <div className="w-full bg-white py-12  lg:px-16 flex flex-col items-center">
       {/* Title and Subtitle */}
       <div className="container w-full text-center mb-12">
         <div className="text-[22px] font-archivo font-semibold text-[#FF9500] tracking-[0.1em] mb-2 uppercase">
@@ -18,15 +18,15 @@ const BiographySection = () => {
         {/* Main Content */}
         <div className="container flex flex-col xl:flex-row items-start justify-center gap-10 xl:space-x-[73px] w-full mx-auto mb-[70px]">
           {/* Image */}
-          <div className="flex-shrink-0 w-full max-w-xs lg:max-w-[457px] mb-8 lg:mb-0">
+          <div className="flex-shrink-0 w-full lg:max-w-[457px] mx-auto mb-8 lg:mb-0">
             <img
               src="/biography-section-iamge.png"
               alt="Dr. Hardy Chukwudera Mbadugha"
-              className="rounded-[24px] w-full h-auto lg:h-[610px] object-cover"
+              className="lg:rounded-[24px] w-full h-auto lg:h-[610px] object-cover"
             />
           </div>
           {/* Text Content */}
-          <div className="flex-1 w-full max-w-2xl">
+          <div className="flex-1 w-full max-w-2xl px-4 md:px-1 lg:px-8">
             {/* Education */}
             <div className="mb-8">
               <h3 className="font-archivo font-bold text-[20px] md:text-xl text-[#4A7181] mb-2">
@@ -82,13 +82,13 @@ const BiographySection = () => {
         </div>
 
         {/* Recognitions Section */}
-        <div className="container flex flex-col xl:flex-row items-start justify-center gap-10 xl:space-x-[73px] w-full mx-auto">
+        <div className="container flex flex-col-reverse xl:flex-row items-start justify-center gap-10 xl:space-x-[73px] w-full mx-auto">
           {/* Left: Text */}
-          <div className="flex-1 max-w-xl">
+          <div className="flex-1 max-w-xl px-4 md:px-1 lg:px-8">
             <h3 className="font-archivo font-bold text-[20px] md:text-xl text-[#4A7181] mb-4">
               Recognitions
             </h3>
-            <p className="font-archivo text-base text-[#395763] leading-relaxed mb-8">
+            <p className="font-archivo text-base text-[#000000] leading-relaxed mb-8">
               In recognition of his outstanding service, he was awarded the Best
               Corps Member in Abia State by Governor Okezie Victor Ikpeazu and
               was offered automatic state government employment, which he turned
@@ -117,7 +117,7 @@ const BiographySection = () => {
               Optometrist and Dispensing Opticians Registration Board of Nigeria
               (ODORBN) under the chairmanship of Prof. Mrs. Ikoro Nwakaego.
             </p>
-            <p className="font-archivo text-base text-[#395763] leading-relaxed">
+            <p className="font-archivo text-base text-[#000000] leading-relaxed">
               Dr. Hardy Chukwudera Mbadugha is a distinguished and exemplary
               professional who has made remarkable contributions to the field of
               optometry. He has demonstrated outstanding clinical excellence,
@@ -130,25 +130,25 @@ const BiographySection = () => {
             </p>
           </div>
           {/* Right: Images */}
-          <div className="flex-1 flex flex-col gap-6 max-w-xl w-full">
+          <div className="flex-1 flex flex-col lg:gap-6 max-w-xl w-full justify-center md:items-start items-center">
             {/* Top: Two images side by side */}
-            <div className="flex flex-col lg:flex-row gap-4 w-full">
+            <div className="flex flex-row w-[358px] lg:w-full">
               <img
                 src="/recognition-1.png"
                 alt="Recognition 1"
-                className="rounded-tl-[20px] w-full lg:w-1/2 h-[408px] object-cover"
+                className="rounded-tl-[20px] w-[179px]  lg:w-1/2 h-auto lg:h-[408px] object-cover"
               />
               <img
                 src="/recognition-2.png"
                 alt="Recognition 2"
-                className="rounded-tr-[20px] w-full lg:w-1/2 h-[408px] object-cover"
+                className="rounded-tr-[20px] w-[179px] lg:w-1/2 h-auto lg:h-[408px] object-cover"
               />
             </div>
             {/* Bottom: One wide image */}
             <img
               src="/recognition-3.png"
               alt="Recognition 3"
-              className="rounded-b-[20px] w-full h-[303px] object-cover"
+              className="rounded-b-[20px] w-[358px] h-auto lg:w-full lg:h-[303px] object-cover"
             />
           </div>
         </div>

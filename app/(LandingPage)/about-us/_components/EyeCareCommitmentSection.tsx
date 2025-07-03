@@ -5,7 +5,7 @@ export const EyeCareCommitmentSection = () => {
     <div className="bg-[#F5F8FC] py-16 px-4">
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-[40px] font-archivo font-bold leading-[120%] text-center align-middle text-[#F4931C] mb-[48px]">
+        <h2 className="md:text-[40px] text-[30px] font-archivo font-bold leading-[120%] text-center align-middle text-[#F4931C] mb-[48px]">
           We Committed To Delivering The Utmost Eye Care
         </h2>
       </div>
@@ -13,7 +13,7 @@ export const EyeCareCommitmentSection = () => {
       {/* Content Grid */}
       <div className="container min-h-[410px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0">
         {/* Left Blue Section */}
-        <div className="bg-[#6092A7] p-12 flex flex-col justify-center">
+        <div className="bg-[#6092A7] p-4 lg:p-12 flex flex-col justify-center">
           <h3 className="text-white font-archivo font-bold text-[21px] leading-[150%] tracking-[-0.02em] text-center mb-[32px]">
             We don't just care for eyes, we care for YOU.
           </h3>
@@ -27,9 +27,9 @@ export const EyeCareCommitmentSection = () => {
         </div>
 
         {/* Right Side - Combined White and Dark Sections */}
-        <div className="flex flex-col">
+        <div className="flex lg:flex-col">
           {/* Top White Section */}
-          <div className="bg-white p-12 flex-1 flex flex-col justify-center">
+          <div className="bg-white p-4 w-[195px] md:w-full h-full lg:p-12">
             <p className="font-archivo font-normal text-base leading-[150%] tracking-[0%] text-gray-800">
               Beyond clinical services, Boom Eye Clinic Ltd is passionate about 
               community impact. We actively engage in eye health education, 
@@ -41,7 +41,7 @@ export const EyeCareCommitmentSection = () => {
           </div>
 
           {/* Bottom Dark Section */}
-          <div className="bg-[#0A0A23] p-12 flex-1 flex flex-col justify-center">
+          <div className="bg-[#0A0A23] p-4 w-[195px] md:w-full h-full lg:p-12">
             <p className="text-white font-archivo font-normal text-base leading-[150%] tracking-[0%]">
               With a focus on continuous innovation and professional growth, 
               we strive to be a leader in the eye care industry, offering 

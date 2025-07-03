@@ -2,7 +2,9 @@ import React from 'react'
 
 const BookAppointmentFooter = () => {
   return (
-    <div className="w-full bg-[#6B9BB5] py-8 sm:py-12 px-2 sm:px-4 flex flex-col items-center relative overflow-hidden">
+    <div className='bg-[#6B9BB5] '>
+
+    <div className="w-full max-w-[120rem] mx-auto py-8 sm:py-12 px-2 sm:px-4 flex flex-col items-center relative overflow-hidden">
       {/* Orange squares */}
       <div className="absolute left-4 sm:left-10 top-4 sm:top-8 w-6 h-6 sm:w-10 sm:h-10 bg-[#FF9500] rounded-none" />
       <div className="absolute left-4 sm:left-10 bottom-4 sm:bottom-8 w-6 h-6 sm:w-10 sm:h-10 bg-[#FF9500] rounded-none" />
@@ -35,6 +37,7 @@ const BookAppointmentFooter = () => {
           "Your vision matters to us. We look forward to caring for you whenever you need care."
         </div>
       </div>
+    </div>
     </div>
   )
 }

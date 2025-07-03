@@ -57,8 +57,8 @@ export default function ContactHelpSection() {
 
   return (
     <>
-      <div className="bg-[#F3FAFD] py-16 px-4">
-        <div className="container mx-auto bg-white p-4 md:p-12">
+      <div className="bg-white lg:bg-[#F3FAFD] py-16 px-4 mt-10">
+        <div className="container mx-auto bg-white p-0 md:p-12">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form Section */}
             <div className="bg-white rounded-lg">
@@ -160,7 +160,7 @@ export default function ContactHelpSection() {
                 </div>
 
                 {/* Doctor Image */}
-                <div className="w-full md:w-1/2 mt-6 md:mt-0 px-6 md:px-0 xl:absolute xl:top-14 xl:-right-16 max-w-[388px] h-auto">
+                <div className="w-full md:w-1/2 px-6 md:px-0 xl:absolute xl:top-14 xl:-right-16 max-w-[388px] h-auto">
                   <img
                     src="need-help-image.png"
                     alt="Healthcare professional with stethoscope"
@@ -170,25 +170,25 @@ export default function ContactHelpSection() {
               </div>
 
               {/* Social Media Icons */}
-              <div className="relative z-10 px-6 sm:px-8 pb-8 pt-6 sm:pt-[39px]">
-                <div className="flex flex-wrap justify-start sm:justify-center gap-x-6 gap-y-4">
+              <div className="relative z-10 px-4 sm:px-8 pb-8 pt-6 sm:pt-[39px]">
+                <div className="flex flex-wrap justify-between  gap-y-4">
                   <Link href="#">
-                    <img src="/icons/whatapp.png" alt="whatsapp icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/whatapp.png" alt="whatsapp icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                   <Link href="#">
-                    <img src="/icons/facebook.png" alt="facebook icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/facebook.png" alt="facebook icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                   <Link href="#">
-                    <img src="/icons/ig.png" alt="instagram icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/ig.png" alt="instagram icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                   <Link href="#">
-                    <img src="/icons/linkedln.png" alt="linkedin icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/linkedln.png" alt="linkedin icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                   <Link href="#">
-                    <img src="/icons/tiktok.png" alt="tiktok icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/tiktok.png" alt="tiktok icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                   <Link href="#">
-                    <img src="/icons/x.png" alt="twitter icons" className="w-[50px] h-[50px]" />
+                    <img src="/icons/x.png" alt="twitter icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
                 </div>
               </div>
@@ -198,16 +198,21 @@ export default function ContactHelpSection() {
       </div>
 
       {/* Map Section */}
-<div className="w-full mt-20">
-  <div className="relative w-full max-h-[440px] overflow-hidden">
-    <img
-      src="/map.svg"
-      alt="map"
-      className="w-full h-auto object-cover"
-    />
-  </div>
-</div>
-
+      <div className="w-full flex justify-center mt-12">
+        <div className="bg-white max-w-[12orem] mx-auto w-full overflow-hidden">
+          {/* Mobile to md: show map_mobile.svg, lg+: show map.svg */}
+          <img
+            src="/map_mobile.svg"
+            alt="map"
+            className="w-full h-auto object-cover block lg:hidden"
+          />
+          <img
+            src="/map.svg"
+            alt="map"
+            className="w-full h-auto object-cover hidden lg:block"
+          />
+        </div>
+      </div>
     </>
   );
 }

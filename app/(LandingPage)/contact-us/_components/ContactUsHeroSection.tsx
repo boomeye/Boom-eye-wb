@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 
 export const ContactUsHeroSection = () => {
   return (
-    <div className="w-full bg-[#F3FAFD]">
+    <div className="w-full bg-[#F3FAFD] max-w-[120rem] mx-auto">
       {/* Mobile to LG Version only (up to <xl) */}
       <div className="block xl:hidden relative h-screen md:h-[30rem] w-full bg-cover bg-center bg-no-repeat" 
         style={{ backgroundImage: "url('/contact-us-image.png')" }}

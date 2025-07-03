@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        // className={`${archivo.variable} antialiased max-w-[150rem] mx-auto bg-[#F3FAFD]`}
         className={`${archivo.variable} antialiased`}
       >
         <Header />

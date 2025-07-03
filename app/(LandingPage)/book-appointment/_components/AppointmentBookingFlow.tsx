@@ -468,7 +468,7 @@ const AppointmentBookingFlow = () => {
   );
 
   return (
-    <div className="bg-[#F3FAFD] flex flex-col lg:flex-row">
+    <div className="bg-[#F3FAFD] max-w-[120rem] mx-auto flex flex-col lg:flex-row">
       <div className="flex-1 flex flex-col-reverse lg:flex-row">
         <div className="flex-1 p-4 sm:p-8 xl:p-12 flex items-center justify-center">
           <div className="w-full max-w-4xl">

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ReviewHeroSection = () => {
   return (
-    <div className="min-h-screen w-full bg-[#F3FAFD]">
+    <div className="h-screen w-full bg-[#F3FAFD] max-w-[120rem] mx-auto">
       {/* Desktop Version */}
       <div className="hidden xl:flex">
         {/* Left side - Text content */}
