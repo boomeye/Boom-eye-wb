@@ -187,9 +187,9 @@ export default function ContactHelpSection() {
                   <Link href="http://tiktok.com/@boomeyeclinic" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/tiktok.png" alt="tiktok icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  {/* <Link href="#" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://x.com/boomeyeclinic" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/x.png" alt="twitter icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>

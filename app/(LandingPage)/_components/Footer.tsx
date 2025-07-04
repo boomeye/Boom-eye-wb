@@ -43,9 +43,9 @@ const Footer = () => {
               <a href="http://tiktok.com/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="ic:baseline-tiktok" className="w-6 h-6" />
               </a>
-              {/* <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
+              <a href="https://x.com/boomeyeclinic" className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
                 <Icon icon="ri:twitter-x-fill" className="w-6 h-6" />
-              </a> */}
+              </a>
               <a href="https://www.threads.net/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="simple-icons:threads" className="w-6 h-6" />
               </a>
@@ -206,9 +206,9 @@ const Footer = () => {
                 <a href="http://tiktok.com/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="ic:baseline-tiktok" className="w-6 h-6" />
                 </a>
-                {/* <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
+                <a href="https://x.com/boomeyeclinic" className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
                   <Icon icon="ri:twitter-x-fill" className="w-6 h-6" />
-                </a> */}
+                </a>
                 <a href="https://www.threads.net/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="simple-icons:threads" className="w-6 h-6" />
                 </a>
