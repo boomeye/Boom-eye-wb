@@ -85,7 +85,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/book-appointment"
+                    href="https://care.ecmsapx.com/appointment/28X74K"
                     className="text-white font-archivo font-normal text-base py-2 block border-b border-white/30 mb-[16px] hover:text-[#6092A7]"
                   >
                     Book An Appointment

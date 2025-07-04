@@ -61,7 +61,7 @@ export const MeetDoctorSection = () => {
           </p>
 
           <Link
-            href="/book-appointment"
+            href="https://care.ecmsapx.com/appointment/28X74K"
             className="inline-block bg-[#0A0A23] text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
           >
             Book An Appointment 

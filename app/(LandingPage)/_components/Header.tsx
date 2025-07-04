@@ -45,7 +45,7 @@ const Header = () => {
             </Link>
           </nav>
           <hr className="w-[504px] border-white/30 my-2" />
-          <Link href="/book-appointment" className="mt-2 inline-flex items-center bg-[#090920] border-0 w-[204px] h-[36px] rounded-[8px] py-[8px] px-[16px] gap-[10px] focus:outline-none hover:bg-[#1a2538] text-white shadow-md font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle">
+          <Link href="https://care.ecmsapx.com/appointment/28X74K" className="mt-2 inline-flex items-center bg-[#090920] border-0 w-[204px] h-[36px] rounded-[8px] py-[8px] px-[16px] gap-[10px] focus:outline-none hover:bg-[#1a2538] text-white shadow-md font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle">
             BOOK AN APPOINTMENT
           </Link>
         </div>
