@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "../globals.css";
-import Header from "./_components/Header";
-import Navbar from "./_components/Navbar";
-import HeroSection from "./_components/HeroSection";
-import Footer from "./_components/Footer";
+import "./globals.css";
+import Header from "./(LandingPage)/_components/Header";
+import Navbar from "./(LandingPage)/_components/Navbar";
+import HeroSection from "./(LandingPage)/_components/HeroSection";
+import Footer from "./(LandingPage)/_components/Footer";
 
 const archivo = localFont({
-  src: "../fonts/Archivo-VariableFont_wdth,wght.ttf",
+  src: "./fonts/Archivo-VariableFont_wdth,wght.ttf",
   variable: "--font-archivo",
   weight: "100 900",
 });

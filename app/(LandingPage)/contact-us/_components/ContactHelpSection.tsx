@@ -172,24 +172,24 @@ export default function ContactHelpSection() {
               {/* Social Media Icons */}
               <div className="relative z-10 px-4 sm:px-8 pb-8 pt-6 sm:pt-[39px]">
                 <div className="flex flex-wrap justify-between  gap-y-4">
-                  <Link href="#">
-                    <img src="/icons/whatapp.png" alt="whatsapp icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
+                  <Link href="https://wa.me/message/W2GXITSGNCBJM1" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/whatapp.png" alt="threads icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/profile.php?id=61573478302168&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/facebook.png" alt="facebook icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.instagram.com/boomeyeclinic/" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/ig.png" alt="instagram icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/in/boom-eye-clinic-ltd-87ba44369" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/linkedln.png" alt="linkedin icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  <Link href="#">
+                  <Link href="http://tiktok.com/@boomeyeclinic" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/tiktok.png" alt="tiktok icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
                   </Link>
-                  <Link href="#">
+                  {/* <Link href="#" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/x.png" alt="twitter icons" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

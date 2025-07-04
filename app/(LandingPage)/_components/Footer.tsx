@@ -29,24 +29,25 @@ const Footer = () => {
               while empowering you with the right knowledge. At Boom Eye Clinic,
               we're committed to you an an exceptional experience. Every time!
             </p>
+            {/* Social liks */}
             <span className="md:inline-flex justify-center hidden">
-              <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
-                <Icon icon="ic:baseline-whatsapp" className="w-6 h-6" />
-              </a>
-              <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+              <a href="https://www.facebook.com/profile.php?id=61573478302168&mibextid=wwXIfr&mibextid=wwXIfr" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="ic:baseline-facebook" className="w-6 h-6" />
               </a>
-              <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+              <a href="https://www.instagram.com/boomeyeclinic/" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="mdi:instagram" className="w-6 h-6" />
               </a>
-              <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/boom-eye-clinic-ltd-87ba44369" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="mdi:linkedin" className="w-6 h-6" />
               </a>
-              <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+              <a href="http://tiktok.com/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                 <Icon icon="ic:baseline-tiktok" className="w-6 h-6" />
               </a>
-              <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+              {/* <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
                 <Icon icon="ri:twitter-x-fill" className="w-6 h-6" />
+              </a> */}
+              <a href="https://www.threads.net/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
+                <Icon icon="simple-icons:threads" className="w-6 h-6" />
               </a>
             </span>
           </div>
@@ -191,25 +192,25 @@ const Footer = () => {
                   </p>
                 </li>
               </nav>
-
+{/* Social links */}
               <span className="inline-flex justify-center md:hidden">
-                <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
-                  <Icon icon="ic:baseline-whatsapp" className="w-6 h-6" />
-                </a>
-                <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+                <a href="https://www.facebook.com/profile.php?id=61573478302168&mibextid=wwXIfr&mibextid=wwXIfr" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="ic:baseline-facebook" className="w-6 h-6" />
                 </a>
-                <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+                <a href="https://www.instagram.com/boomeyeclinic/" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="mdi:instagram" className="w-6 h-6" />
                 </a>
-                <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+                <a href="https://www.linkedin.com/in/boom-eye-clinic-ltd-87ba44369" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="mdi:linkedin" className="w-6 h-6" />
                 </a>
-                <a className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+                <a href="http://tiktok.com/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="ic:baseline-tiktok" className="w-6 h-6" />
                 </a>
-                <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10">
+                {/* <a className="text-[#6092A7] p-2 rounded-full bg-white flex items-center mr-3 justify-center hover:text-white hover:bg-white/10">
                   <Icon icon="ri:twitter-x-fill" className="w-6 h-6" />
+                </a> */}
+                <a href="https://www.threads.net/@boomeyeclinic" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
+                  <Icon icon="simple-icons:threads" className="w-6 h-6" />
                 </a>
               </span>
             </div>
@@ -219,7 +220,7 @@ const Footer = () => {
         {/* WhatsApp Floating Button */}
         <div className="flex justify-center pt-6">
           <a
-            href="https://wa.me/+2347043798008"
+            href="https://wa.me/message/W2GXITSGNCBJM1"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hidden md:block absolute right-20 bottom-12 z-20 p-3 rounded-full shadow-xl hover:bg-[#1DA851] transition-colors duration-300"
@@ -244,7 +245,7 @@ const Footer = () => {
 
         <div className="flex justify-end mr-[16px] pt-[16px] pb-[48px] md:hidden">
           <a
-            href="https://wa.me/+2347043798008"
+            href="https://wa.me/message/W2GXITSGNCBJM1"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white z-20 p-3 rounded-full shadow-xl hover:bg-[#1DA851] transition-colors duration-300"
