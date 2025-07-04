@@ -151,7 +151,9 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <p>+234 803 894 5401</p>
+                    <a href="tel:+2348038945401" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>+234 803 894 5401</p>
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-center text-white pb-[16px] mb-[16px] border-b border-white/30 hover:text-[#6092A7]">
@@ -160,7 +162,9 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <p>+234 704 379 8008</p>
+                    <a href="tel:+2347043798008" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>+234 704 379 8008</p>
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-center text-white mb-[16px] hover:text-[#6092A7]">
@@ -169,7 +173,9 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <p>info@boomeyecilinc.com</p>
+                    <a href="mailto:info@boomeyecilinc.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>info@boomeyecilinc.com</p>
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-center text-white pb-[16px] mb-[16px] border-b border-white/30 hover:text-[#6092A7]">
@@ -178,7 +184,9 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <p>boomeyecilinc@outlook.com</p>
+                    <a href="mailto:boomeyecilinc@outlook.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>boomeyecilinc@outlook.com</p>
+                    </a>
                   </div>
                 </li>
                 <li className="flex items-start text-white pb-[16px] mb-[16px] border-b border-white/30 hover:text-[#6092A7]">
