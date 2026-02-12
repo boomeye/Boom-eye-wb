@@ -15,6 +15,9 @@ const archivo = localFont({
 export const metadata: Metadata = {
   title: "Boom Eye Clinic",
   description: "Boom Eye Clinic",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +34,7 @@ export default function RootLayout({
         <Header />
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

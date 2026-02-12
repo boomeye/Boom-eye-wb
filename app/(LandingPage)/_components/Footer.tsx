@@ -173,8 +173,19 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <a href="mailto:info@boomeyecilinc.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
-                      <p>info@boomeyecilinc.com</p>
+                    <a href="mailto:info@boomeyeclinic.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>info@boomeyeclinic.com</p>
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-center text-white mb-[16px] hover:text-[#6092A7]">
+                  <Icon
+                    icon="material-symbols:mail-outline-rounded"
+                    className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
+                  />
+                  <div>
+                    <a href="mailto:admin@boomeyeclinic.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>admin@boomeyeclinic.com</p>
                     </a>
                   </div>
                 </li>
@@ -184,8 +195,8 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <a href="mailto:boomeyecilinc@outlook.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
-                      <p>boomeyecilinc@outlook.com</p>
+                    <a href="mailto:drhardy@boomeyeclinic.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>drhardy@boomeyeclinic.com</p>
                     </a>
                   </div>
                 </li>
@@ -195,12 +206,12 @@ const Footer = () => {
                     className="w-[25px] h-[25px] mr-3 mt-1 text-[#6092A7] hover:text-white"
                   />
                   <p>
-                    Plot 1607 Zone E, Apo Resettlement Off Murtala <br />{" "}
-                    Mohammed Express Road Gudu District, Apo, Abuja, F.C.T.
+                    Awesome Plaza, Suite A28 (Ground Floor) Opp. Chicken <br />{" "}
+                    Republic (Off Apo Novare Mall) Apo Resettlement, Abuja
                   </p>
                 </li>
               </nav>
-{/* Social links */}
+              {/* Social links */}
               <span className="inline-flex justify-center md:hidden">
                 <a href="https://www.facebook.com/profile.php?id=61573478302168&mibextid=wwXIfr&mibextid=wwXIfr" className="text-[#6092A7] mr-3 p-2 rounded-full bg-white flex items-center justify-center hover:text-white hover:bg-white/10" target="_blank" rel="noopener noreferrer">
                   <Icon icon="ic:baseline-facebook" className="w-6 h-6" />
@@ -264,8 +275,8 @@ const Footer = () => {
             />
           </a>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   );
 };
 

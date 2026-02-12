@@ -5,12 +5,12 @@ export const ContactUsHeroSection = () => {
   return (
     <div className="w-full bg-[#F3FAFD] max-w-[120rem] mx-auto">
       {/* Mobile to LG Version only (up to <xl) */}
-      <div className="block xl:hidden relative h-screen md:h-[30rem] w-full bg-cover bg-center bg-no-repeat" 
+      <div className="block xl:hidden relative h-screen md:h-[30rem] w-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/contact-us-image.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#0B354D] bg-opacity-60" />
-        
+
         {/* Content */}
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div className="text-center">
@@ -18,8 +18,8 @@ export const ContactUsHeroSection = () => {
               We're Always Here For You
             </h1>
             <p className="text-white text-lg sm:text-xl leading-relaxed">
-              Our team is always ready to assist you with your eye care needs, appointments, 
-              and inquiries anytime. Kindly drop a WhatsApp chat if contacting us outside 
+              Our team is always ready to assist you with your eye care needs, appointments,
+              and inquiries anytime. Kindly drop a WhatsApp chat if contacting us outside
               working hours.
             </p>
           </div>
@@ -58,7 +58,7 @@ export const ContactUsHeroSection = () => {
           <h2 className="font-archivo font-bold text-3xl md:text-4xl xl:text-5xl leading-[120%] tracking-[0%] text-center text-[#FF9E00] mb-[16px] mt-[16px]">
             Get In Touch With Us Through Any Of The Channels
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-8">
             {/* Contact Items */}
             {[
@@ -67,7 +67,8 @@ export const ContactUsHeroSection = () => {
                 icon: "lucide:mail",
                 content: [
                   { text: "info@boomeyeclinic.com", link: "mailto:info@boomeyeclinic.com" },
-                  { text: "boomeyeclinic@outlook.com", link: "mailto:boomeyeclinic@outlook.com" },
+                  { text: "admin@boomeyeclinic.com", link: "mailto:admin@boomeyeclinic.com" },
+                  { text: "drhardy@boomeyeclinic.com", link: "mailto:drhardy@boomeyeclinic.com" },
                 ],
               },
               {
@@ -82,9 +83,9 @@ export const ContactUsHeroSection = () => {
                 title: "Location",
                 icon: "lucide:map-pin",
                 content: [
-                  { text: "Plot 1607 Zone E, Apo Resettlement Off Murtala" },
-                  { text: "Mohammed Express Road Gudu District, Apo, Abuja," },
-                  { text: "F.C.T" },
+                  { text: "Awesome Plaza, Suite A28 (Ground Floor)" },
+                  { text: "Opp. Chicken Republic (Off Apo Novare Mall)" },
+                  { text: "Apo Resettlement, Abuja" },
                 ],
               },
               {
@@ -99,11 +100,11 @@ export const ContactUsHeroSection = () => {
               <div key={i} className="flex flex-col items-center text-center py-6 px-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6092A7] mb-4">
                   <Icon icon={icon} className="w-6 h-6 text-white" />
-          </div>
+                </div>
                 <h3 className="font-archivo font-bold text-[16px] leading-[150%] text-[#454545] mb-2 xl:mb-4">
                   {title}
-              </h3>
-              <div className="space-y-1">
+                </h3>
+                <div className="space-y-1">
                   {content.map((item, j) => {
                     if ('link' in item) {
                       return (
@@ -130,13 +131,13 @@ export const ContactUsHeroSection = () => {
                         <p
                           key={j}
                           className="block text-[13.5px] text-[#454545] font-archivo"
-                >
+                        >
                           {item.text}
                         </p>
                       );
                     }
                   })}
-            </div>
+                </div>
               </div>
             ))}
           </div>

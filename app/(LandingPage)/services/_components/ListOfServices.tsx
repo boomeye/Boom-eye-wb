@@ -97,7 +97,7 @@ const ListOfServices = () => {
             onClick={() => scrollByCard('left')}
             aria-label="Scroll left"
           >
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </button>
           <button
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-br from-white to-[#C8E8F6] p-2 border rounded-full flex items-center justify-center"
@@ -105,7 +105,7 @@ const ListOfServices = () => {
             onClick={() => scrollByCard('right')}
             aria-label="Scroll right"
           >
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#0A0A23" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </button>
           <div
             ref={scrollRef}
@@ -127,16 +127,18 @@ const ListOfServices = () => {
                   />
                 </div>
                 {/* Content */}
-                <div className="flex flex-col flex-1">
-                  <h3 className="font-archivo font-bold text-[20px] leading-[150%] tracking-[-0.02em] align-middle text-[#0A0A23] mb-2 transition-colors duration-300 group-hover:text-white">
-                    {service.title}
-                  </h3>
-                  <p className="font-archivo font-normal text-[14px] leading-[150%] tracking-[0%] align-middle text-[#454545] mb-[10px] flex-1 transition-colors duration-300 group-hover:text-white">
-                    {service.description}
-                  </p>
-                  <Link href="https://care.ecmsapx.com/appointment/28X74K" className="w-full bg-[#090920] hover:bg-[#1a2538] text-white font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle rounded-lg py-2.5 px-4 mt-auto transition-colors duration-200 group-hover:bg-white group-hover:text-[#090920]">
-                    Book An Appointment
-                  </Link>
+                <div className="p-4 flex-grow flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold text-[#0B354D] mb-2 font-archivo">{service.title}</h3>
+                    <p className="font-archivo font-normal text-[14px] leading-[150%] tracking-[0%] align-middle text-[#454545] mb-[10px] flex-1 transition-colors duration-300 group-hover:text-white">
+                      {service.description}
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <Link href="https://care.ecmsapx.com/appointment/28X74K" className="w-full bg-[#090920] hover:bg-[#1a2538] text-white font-inter font-semibold text-[14px] leading-[145%] tracking-[0%] text-center align-middle rounded-lg py-2.5 px-4 mt-auto transition-colors duration-200 group-hover:bg-white group-hover:text-[#090920]">
+                      Book An Appointment
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
