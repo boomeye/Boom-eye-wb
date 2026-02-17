@@ -126,10 +126,10 @@ const HeroSection = () => {
                 <h3 className="font-archivo font-bold text-[16px] xl:text-[18px] leading-[150%] text-center align-middle mb-2 xl:mb-4">Email Us</h3>
                 <div className="space-y-1 text-sm lg:text-base">
                   <a
-                    href="mailto:info@boomeyeclinic.com"
+                    href="mailto:boomeyeclinic@outlook.com"
                     className="block hover:text-blue-300 transition-colors duration-200 font-archivo font-normal text-[12px] md:text-[14px] xl:text-[16px] leading-[150%] tracking-[0%] text-center align-middle underline"
                   >
-                    info@boomeyeclinic.com
+                    boomeyeclinic@outlook.com
                   </a>
 
                 </div>
@@ -140,7 +140,7 @@ const HeroSection = () => {
                 <h3 className="font-archivo font-bold text-[16px] xl:text-[18px] leading-[150%] text-center align-middle mb-2 xl:mb-4">Contact Us</h3>
                 <div className="space-y-1 text-sm lg:text-base">
                   <a
-                    href="tel:+2348038945401"
+                    href="tel:+2348122595294"
                     className="block hover:text-blue-300 transition-colors duration-200 font-archivo font-normal text-[12px] md:text-[14px] xl:text-[16px] leading-[150%] tracking-[0%] text-center align-middle"
                   >
                     +234 803 894 5401

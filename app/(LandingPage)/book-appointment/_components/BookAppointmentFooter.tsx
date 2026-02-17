@@ -29,7 +29,7 @@ const BookAppointmentFooter = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-.659 1.591l-7.5 7.5a2.25 2.25 0 01-3.182 0l-7.5-7.5A2.25 2.25 0 012.25 6.993V6.75" />
                 </svg>
               </span>
-              <a href="mailto:info@boomeyeclinic.com" className="underline font-normal text-white hover:text-[#FF9500]">info@boomeyeclinic.com</a>
+              <a href="mailto:boomeyeclinic@outlook.com" className="underline font-normal text-white hover:text-[#FF9500]">boomeyeclinic@outlook.com</a>
 
             </div>
           </div>

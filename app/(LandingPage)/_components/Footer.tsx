@@ -151,7 +151,7 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <a href="tel:+2348038945401" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                    <a href="tel:+2348122595294" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
                       <p>+234 803 894 5401</p>
                     </a>
                   </div>
@@ -173,8 +173,8 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <a href="mailto:info@boomeyeclinic.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
-                      <p>info@boomeyeclinic.com</p>
+                    <a href="mailto:boomeyeclinic@outlook.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>boomeyeclinic@outlook.com</p>
                     </a>
                   </div>
                 </li>
@@ -195,8 +195,8 @@ const Footer = () => {
                     className="w-[20px] h-[20px] mr-2 text-[#6092A7] hover:text-white"
                   />
                   <div>
-                    <a href="mailto:drhardy@boomeyeclinic.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
-                      <p>drhardy@boomeyeclinic.com</p>
+                    <a href="mailto:boomeyeclinic@outlook.com" className="hover:underline focus:outline-none focus:ring-2 focus:ring-[#6092A7] rounded">
+                      <p>boomeyeclinic@outlook.com</p>
                     </a>
                   </div>
                 </li>

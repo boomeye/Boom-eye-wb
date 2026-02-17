@@ -246,7 +246,7 @@ const FeedbackSection = () => {
                 OR
               </p>
               <p className="mb-8 text-[16px] text-white font-archivo">
-                <a href="mailto:info@boomeyeclinic.com" className="underline hover:text-white/70 font-archivo">info@boomeyeclinic.com</a>
+                <a href="mailto:boomeyeclinic@outlook.com" className="underline hover:text-white/70 font-archivo">boomeyeclinic@outlook.com</a>
               </p>
 
               <p className="mb-4 text-[16px] leading-relaxed text-white font-archivo">

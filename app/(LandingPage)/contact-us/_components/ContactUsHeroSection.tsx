@@ -66,16 +66,16 @@ export const ContactUsHeroSection = () => {
                 title: "Email Address",
                 icon: "lucide:mail",
                 content: [
-                  { text: "info@boomeyeclinic.com", link: "mailto:info@boomeyeclinic.com" },
+                  { text: "boomeyeclinic@outlook.com", link: "mailto:boomeyeclinic@outlook.com" },
                   { text: "admin@boomeyeclinic.com", link: "mailto:admin@boomeyeclinic.com" },
-                  { text: "drhardy@boomeyeclinic.com", link: "mailto:drhardy@boomeyeclinic.com" },
+                  { text: "boomeyeclinic@outlook.com", link: "mailto:boomeyeclinic@outlook.com" },
                 ],
               },
               {
                 title: "Phone Number",
                 icon: "lucide:phone",
                 content: [
-                  { text: "+234 803 894 5401", link: "tel:+2348038945401" },
+                  { text: "+234 803 894 5401", link: "tel:+2348122595294" },
                   { text: "+234 704 379 8008", link: "tel:+2347043798008" },
                 ],
               },
